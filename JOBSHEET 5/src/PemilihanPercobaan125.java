@@ -1,18 +1,19 @@
 import java.util.Scanner;
 public class PemilihanPercobaan125 {
-
     public static void main(String[] args) {
-        Scanner input25 = new Scanner (System.in);
-        
-        int tahun;
-        System.out.println("Masukan tahun: ");
-        tahun = input25.nextInt();
+        Scanner input07 = new Scanner(System.in);
+        System.out.print("Masukan Angka : ");
+        int angka = input07.nextInt();
 
-        if ((tahun % 4) == 0) {
-            if ((tahun % 100) != 0)
-                System.out.println("Tahun Kabisat");
-            
-        } else 
-            System.out.println("Bukan Tahun Kabisat");
+        //Menggunakan Tenary Operator
+        String jenisBilangan = (angka % 2 == 0) ? "Bilangan Genap" : "Bilangan Ganjil";
+        System.out.println("Angka " + angka + " adalah " + jenisBilangan);
+
+        //Menggunakan if else
+        //if (angka % 2 == 0)
+        //System.out.println("Angka " + angka + " Bilangan Genap");
+        //else
+        //System.out.println("Angka " + angka + " Bilangan Ganjil");
+
     }
 }
