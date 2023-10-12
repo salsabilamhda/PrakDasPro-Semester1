@@ -18,8 +18,8 @@ public class Pemilihan2Percobaan125 {
                 } else {
                     System.out.println("Tahun Kabisat");
                 }
-                } else {
-                    System.out.println("Bukan Tahun Kabisat");
+            } else {
+                System.out.println("Bukan Tahun Kabisat");
                 }
             } 
         }
