@@ -27,8 +27,6 @@ public class LinearSearch25 {
 
         if (hasil != -1) {
             System.out.println("Key ada di posisi indeks ke-" + hasil);
-        } else {
-            System.out.println("Key tidak ditemukan dalam array.");
         }
        
     }
