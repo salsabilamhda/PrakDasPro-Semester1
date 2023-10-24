@@ -24,15 +24,14 @@ public class UtsNimGanjil {
 
             if (jenisBarang.equalsIgnoreCase("minuman")) {
                 jumlahMinuman++;
+                totalHarga += hargaBarang;
                 if (jumlahMinuman == 3) {
-                    totalHarga = (totalHarga - (0.05 * hargaBarang));
-                } else {
-                    totalHarga += hargaBarang;
+                    double potongan = 0.05 * totalHarga;
+                    totalHarga -= potongan;
                 }
             } else {
                 totalHarga += hargaBarang;
             }
-        
         }
 
         System.out.print("Mau beli kantong plastik (ya/tidak)? ");
