@@ -13,7 +13,7 @@ public class Bioskop25 {
         penonton[2][0] = "Eka";
         penonton[2][1] = "Farhan";
         penonton[3][0] = "Gisel";
-        penonton[3][1] = "Hana"; //tambahan
+        penonton[3][1] = "Hana"; //tambahan nomor 3
 
 
         System.out.printf("%s \t %s\n", penonton[0][0], penonton[0][1]);
@@ -21,11 +21,18 @@ public class Bioskop25 {
         System.out.printf("%s \t %s\n", penonton[2][0], penonton[2][1]);
         System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
 
-        //tambahan
+        //tambahan nomor 4
+        //System.out.println(penonton.length);
+        //System.out.println(penonton[0].length);
+        //System.out.println(penonton[1].length);
+        //System.out.println(penonton[2].length);
+        //System.out.println(penonton[3].length);
+
+        //modifikasi nomor 5
         System.out.println(penonton.length);
-        System.out.println(penonton[0].length);
-        System.out.println(penonton[1].length);
-        System.out.println(penonton[2].length);
-        System.out.println(penonton[3].length);
+
+        for (int i=0; i < penonton.length; i++) {
+            System.out.println("Panjang baris ke-" + (i+1) + ": " + penonton[i].length);
+        }
     }
 }
