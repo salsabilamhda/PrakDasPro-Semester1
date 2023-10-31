@@ -29,10 +29,35 @@ public class Bioskop25 {
         //System.out.println(penonton[3].length);
 
         //modifikasi nomor 5
-        System.out.println(penonton.length);
+       // System.out.println(penonton.length);
 
-        for (int i=0; i < penonton.length; i++) {
-            System.out.println("Panjang baris ke-" + (i+1) + ": " + penonton[i].length);
+        //for (int i=0; i < penonton.length; i++) {
+            //System.out.println("Panjang baris ke-" + (i+1) + ": " + penonton[i].length);
+        //}
+
+        //modifikasi nomor 6
+        //.out.println(penonton.length);
+        //for (String[] barisPenonton : penonton) {
+            //System.out.println("Panjang baris: " + barisPenonton.length);
+       // }
+
+        //modifikasi nomor 10
+        //System.out.println("Penonton pada baris ke-3: ");
+
+        //for (int i = 0; i < penonton[2].length; i++) {
+            //System.out.println(penonton[2][i]);
+        //}
+        
+        //modifikasi nomor 11
+       // System.out.println("Penonton pada baris ke-3: ");
+
+        //for (String i : penonton[2]) {
+           // System.out.println(i);
+        //}
+
+        //modifikasi 12
+        for (int i = 0; i < penonton.length; i++) {
+            System.out.println("Penonton pada baris ke-" + (i+1) + ": " + String.join(", ", penonton[i]));
         }
     }
 }
