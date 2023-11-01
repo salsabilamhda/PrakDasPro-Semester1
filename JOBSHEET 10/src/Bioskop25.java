@@ -29,14 +29,14 @@ public class Bioskop25 {
         //System.out.println(penonton[3].length);
 
         //modifikasi nomor 5
-       // System.out.println(penonton.length);
+       System.out.println(penonton.length);
 
-        //for (int i=0; i < penonton.length; i++) {
-            //System.out.println("Panjang baris ke-" + (i+1) + ": " + penonton[i].length);
-        //}
+        for (int i=0; i < penonton.length; i++) {
+            System.out.println("Panjang baris ke-" + (i+1) + ": " + penonton[i].length);
+        }
 
         //modifikasi nomor 6
-        //.out.println(penonton.length);
+        //System.out.println(penonton.length);
         //for (String[] barisPenonton : penonton) {
             //System.out.println("Panjang baris: " + barisPenonton.length);
        // }
@@ -56,8 +56,8 @@ public class Bioskop25 {
         //}
 
         //modifikasi 12
-        for (int i = 0; i < penonton.length; i++) {
-            System.out.println("Penonton pada baris ke-" + (i+1) + ": " + String.join(", ", penonton[i]));
-        }
+        //for (int i = 0; i < penonton.length; i++) {
+            //System.out.println("Penonton pada baris ke-" + (i+1) + ": " + String.join(", ", penonton[i]));
+        //}
     }
 }
