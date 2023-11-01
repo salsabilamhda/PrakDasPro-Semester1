@@ -23,12 +23,22 @@ public class BioskopWithScanner25 {
             case 1:
                 System.out.print("Masukkan nama: ");
                 nama = scan25.nextLine();
-                System.out.print("Masukkan baris: ");
-                baris = scan25.nextInt();
-                System.out.print("Masukkan kolom: ");
-                kolom = scan25.nextInt();
-                scan25.nextLine();
-                penonton[baris - 1][kolom - 1] = nama;
+               
+                do {
+                    System.out.println("Masukkan baris: ");
+                    baris = scan25.nextInt();
+                    System.out.println("Masukkan kolom: ");
+                    kolom = scan25.nextInt();
+                    scan25.nextLine();
+
+                    if (!isValidSeat(baris, kolom, penonton)) {
+                        System.out.println("Kursi sudah terisi atau nomor baris/kolom tidak tersedia. Silakan pilih kursi lain.");
+
+                    }
+                } while (!isValidSeat(baris, kolom, penonton));
+
+                penonton[baris-1][kolom-1] = nama;
+                System.out.println("Data penonton berhasil diinput.");
                 break;
             case 2:
                 System.out.println("Daftar penonton:");
@@ -43,9 +53,19 @@ public class BioskopWithScanner25 {
             case 3:
                 System.out.println("Terima kasih!");
                 System.exit(0);
-            default:
-                System.out.println("Menu yang Anda pilih tidak valid. Silakan pilih 1, 2, atau 3.");
+                default:
+                    System.out.println("Menu yang Anda pilih tidak valid. Silakan pilih 1, 2, atau 3.");
+            }
         }
     }
+
+    public static boolean isValidSeat(int baris, int kolom, String[][] penonton) {
+        if (baris >= 1 && baris <= 4 && kolom >= 1 && kolom <= 2) {
+            return penonton[baris - 1][kolom - 1] == null;
+        }
+        return false;
+    }
 }
-}
+           
+    
+
