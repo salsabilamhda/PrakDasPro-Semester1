@@ -6,6 +6,7 @@ public class Triangle25 {
 
         System.out.print("Masukkan  nilai N = ");
         int N = scan25.nextInt();
+        scan25.close();
         int i = 0;
         while(i<N) { //modifikasi
             int j = 0;

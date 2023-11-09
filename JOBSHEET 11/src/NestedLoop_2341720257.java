@@ -15,7 +15,7 @@ public class NestedLoop_2341720257 {
                 temps[i][j] = scan25.nextDouble();
                 kotaJum += temps[i][j]; //modif1
             }
-            kotaRata2[i] = kotaJum / temps[0].length; //modif1
+            kotaRata2[i] = kotaJum / temps[0].length; //modif1 
             System.out.println();
         }
 
@@ -24,7 +24,7 @@ public class NestedLoop_2341720257 {
             for (double temp : temps[i]) { //modifikasi dg foreach
                 System.out.print(temp + " ");
             }
-            System.out.println("Rata - rata suhu tiap kota: " + kotaRata2[i]); //modif1
+            System.out.println("Rata - rata suhu :" + kotaRata2[i]); //modif1
             System.out.println();
         }
 
