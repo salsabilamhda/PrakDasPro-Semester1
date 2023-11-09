@@ -6,6 +6,7 @@ public class Square25 {
 
         System.out.print("Masukkan nilai N = ");
         int N = scan25.nextInt();
+        scan25.close();
         
         for(int iOuter=1; iOuter<=N; iOuter++) {
         for(int i = 0; i<=N; i++) {

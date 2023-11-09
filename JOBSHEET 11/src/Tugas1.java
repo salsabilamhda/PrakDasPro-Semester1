@@ -10,14 +10,16 @@ public class Tugas1 {
             System.out.println("Nilai N harus minimal 3.");
         } else {
             for (int i = 1; i <= N; i++) {
-                // Cetak spasi sebelum angka
-                for (int j = 1; j <= N - i; j++) {
-                    System.out.print(" ");
-                }
                 // Cetak angka dari 1 hingga i
                 for (int k = 1; k <= i; k++) {
                     System.out.print(k);
                 }
+
+                // Cetak spasi setelah angka
+                for (int j = 1; j <= N - i; j++) {
+                    System.out.print(" ");
+                }
+
                 System.out.println(); // Pindah ke baris berikutnya
             }
         }

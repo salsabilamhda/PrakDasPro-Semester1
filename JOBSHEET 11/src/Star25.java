@@ -6,6 +6,7 @@ public class Star25 {
 
         System.out.print("Masukkan nilai N = ");
         int N = scan25.nextInt();
+        scan25.close();
 
         for(int i=1; i<=N; i--) {
             System.out.print("*");
