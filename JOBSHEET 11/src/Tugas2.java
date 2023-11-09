@@ -4,25 +4,18 @@ public class Tugas2 {
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan nilai N (minimal 5): ");
         int N = input.nextInt();
+        input.close();
 
-        if (N < 3) {
+        if (N < 5) {
             System.out.println("Nilai N harus minimal 5.");
-            return;
-        }
-
-        int maxBintang = String.valueOf(N).length(); 
-
-        for (int i = 1; i <= N; i++) {
-            for (int j = 1; j <= N - i; j++) {
-                for (int k = 1; k <= maxBintang; k++) {
+        } else {
+            for (int i = N; i >= 1; i--) {
+                // Cetak bintang sebanyak i
+                for (int j = 1; j <= i; j++) {
                     System.out.print("*");
                 }
+                System.out.println(); // Pindah ke baris berikutnya
             }
-            for (int j = 1; j <= i; j++) {
-                System.out.print(" ");
-            }
-
-            System.out.println();
         }
     }
 }
