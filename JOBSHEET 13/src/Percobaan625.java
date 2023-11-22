@@ -23,10 +23,10 @@ public class Percobaan625 {
         t=input.nextInt();
         
         L=hitungLuas(p,l);
-        System.out.println("Luas Persebgi panjang adalah"+L);
+        System.out.println("Luas Persebgi panjang adalah " +L);
 
         vol=hitungVolume(t, p,l);
-        System.out.println("Volume balok adalah"+vol);
+        System.out.println("Volume balok adalah " +vol);
     }
 }
 
