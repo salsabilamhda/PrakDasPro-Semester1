@@ -1,8 +1,23 @@
 import java.util.Scanner;
 public class nilaiTugasMahasiswa {
-    private static int[][] nilai = new int[5][7];
-    private static String[] nama = {"Sari", "Bayu", "Yani", "Dwi", "Lusi"};
+    private static int[][] nilai;
+    private static String[] nama;
     private static Scanner sc = new Scanner(System.in);
+
+    public static void inputJumlahMahasiswaDanTugas() {
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumlahMahasiswa = sc.nextInt();
+        System.out.print("Masukkan jumlah tugas per minggu: ");
+        int jumlahTugas = sc.nextInt();
+
+        nilai = new int[jumlahMahasiswa][jumlahTugas];
+        nama = new String[jumlahMahasiswa];
+
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.print("Masukkan nama mahasiswa ke-" + (i + 1) + ": ");
+            nama[i] = sc.next();
+        }
+    }
 
     public static void inputNilai() {
         for (int i = 0; i < nilai.length; i++) {
@@ -23,6 +38,7 @@ public class nilaiTugasMahasiswa {
             System.out.println();
         }
     }
+
 
     public static void nilaiTertinggi() {
         int mahasiswaTertinggi = 0;
@@ -77,6 +93,7 @@ public class nilaiTugasMahasiswa {
     }
 
     public static void main(String[] args) {
+        inputJumlahMahasiswaDanTugas();
         inputNilai();
         System.out.println();
         tampilNilai();
