@@ -29,4 +29,3 @@ public class Percobaan625 {
         System.out.println("Volume balok adalah " +vol);
     }
 }
-

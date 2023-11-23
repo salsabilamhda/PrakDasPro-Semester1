@@ -16,4 +16,3 @@ public class Percobaan525 {
         Tampil("Polinema");
     }
 }
-
