@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class nilaiTugasMahasiswa {
     private static int[][] nilai = new int[5][7];
-    private static String[] nama = {"Sari", "Rina", "Yani", "Dwi", "Lusi"};
+    private static String[] nama = {"Sari", "Bayu", "Yani", "Dwi", "Lusi"};
     private static Scanner sc = new Scanner(System.in);
 
     public static void inputNilai() {
